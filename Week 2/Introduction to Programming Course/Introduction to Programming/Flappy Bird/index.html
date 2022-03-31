@@ -1,0 +1,185 @@
+<html>
+<head>
+	<title>Flappy Bird</title>
+
+	<style type="text/css">
+	body{
+		background-color: black;
+		margin: 0px;
+
+	}
+	#container{
+		background: url('background.png');
+		width: 500px;
+		height: 580px;
+
+	}
+	div#bird{
+		background: url('bird1.png');
+		background-repeat: no-repeat;
+		background-position:  center;
+		background-size: cover;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+	}
+	div#lowerbg{
+		background: url('lower-background.png');
+		background-repeat: repeat-x;
+		width: 500px;
+		height: 100px;
+		position: absolute;
+	}
+	div#pipes{
+		background: url('pipe.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position:  center;
+		clip: 50px, 0px, 580px, 500px;
+		width: 500px;
+		height: 1000px;	
+		position: absolute;
+
+	}
+	/*div#pipe2{
+		background: url('pipes2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position:  center;
+		width: 500px;
+		height: 500px;
+		position: absolute;
+	}*/
+	.gover{
+		background: url('game-over.png');
+		background-repeat: no-repeat;
+		background-position:  center;
+		background-size: cover;
+		width: 200px;
+		height: 50px;
+		position: absolute;
+	}
+	</style>
+</head>
+<body>
+	<div id='container'>
+		<div id='bird'></div>
+		<div id='pipes'></div>
+		<div id='gameover'></div>
+		<div id='lowerbg'></div>
+	</div>
+	
+	
+	<script>
+		var bird = {
+			x: 200,
+			y: 180
+		};
+		var lowerbg = {
+			x: 0,
+			y: 500,
+			z: 500
+		};
+		var gover = {
+			x: 140,
+			y: 100
+		};
+		var pipes = {
+			x: 200,
+			y: -300
+		};
+		//var pipes2 = {
+			//x: 200,
+			//y: 180
+		//};
+		var gameover = false;
+
+		function displayBird(){
+			document.getElementById('bird').style['top'] = bird.y +"px";
+			document.getElementById('bird').style['left'] = bird.x +"px";
+		}
+
+		function displayLowerBG(){
+			document.getElementById('lowerbg').style['top'] = lowerbg.y +"px";
+			document.getElementById('lowerbg').style['left'] = lowerbg.x +"px";
+			document.getElementById('lowerbg').style['width'] = lowerbg.z +"px";
+		}
+
+		function displayGOver(){
+			var output='';
+			output += "<div class='gover' style='top:"+gover.y+"px; left: "+gover.x+"px;'></div>";
+			document.getElementById('gameover').innerHTML = output;
+			gameover=true;
+		}
+
+		function displayPipes(){
+			document.getElementById('pipes').style['top'] = pipes.y +"px";
+			document.getElementById('pipes').style['left'] = pipes.x +"px";
+			//document.getElementById('pipes2').style['bottom'] = pipes2.y +"px";
+			//document.getElementById('pipes2').style['left'] = pipes2.x +"px";
+		}
+
+		function moveLowerBG(){
+			if (gameover==false){
+				lowerbg.x -= 10;
+				lowerbg.z += 10;
+			}
+		}
+
+		function movePipes(){
+			if (gameover==false){
+				pipes.x -= 10;
+				//pipes2.x -= 10;
+			}
+			if(pipes.x < -250){
+				pipes.x = 210;
+				pipes.y = Math.round(Math.floor(Math.random() * 251) - 400);
+				//To generate a random integer from m to n, here is the code: 
+				//Math.random() * (n-m+1)) + m
+				console.log(pipes.y);
+			}
+		}
+
+		function moveBird(){
+			if(bird.y < 460){
+				bird.y += 10;
+			}
+			if (bird.y == 460){
+				displayGOver();
+				bird.y = 461;
+			}
+		}
+
+		//function removeGameOver() {
+			//var element = document.getElementById("gameover");
+  			//element.remove();
+		//}
+
+		function gameloop(){
+			displayBird();
+			moveLowerBG();
+			displayLowerBG();
+			moveBird();
+			displayPipes();
+			movePipes();
+		}
+
+		setInterval(gameloop, 80);
+
+		document.onkeydown = function(a){
+			if(a.keyCode == 32){
+				if(bird.y == 461){
+					bird.x = 200;
+					bird.y = 180;
+					window.location.reload(false);	
+				}
+				else{
+					bird.y -= 40;
+				}
+			}
+		}
+		displayBird();
+		displayLowerBG();
+	</script>
+</body>
+</html>
