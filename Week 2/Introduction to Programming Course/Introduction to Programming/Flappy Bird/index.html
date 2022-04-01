@@ -12,7 +12,7 @@
 		background: url('background.png');
 		width: 500px;
 		height: 580px;
-
+		overflow: hidden;
 	}
 	div#bird{
 		background: url('bird1.png');
@@ -31,15 +31,14 @@
 		position: absolute;
 	}
 	div#pipes{
-		background: url('pipe.png');
+  		/*mask-image: url(background.png);*/
+		background: url('pipes.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position:  center;
-		clip: 50px, 0px, 580px, 500px;
 		width: 500px;
-		height: 1000px;	
+		height: 500px;	
 		position: absolute;
-
 	}
 	/*div#pipe2{
 		background: url('pipes2.png');
@@ -88,6 +87,7 @@
 			x: 200,
 			y: -300
 		};
+		var temp = -30;
 		//var pipes2 = {
 			//x: 200,
 			//y: 180
@@ -134,11 +134,22 @@
 			if(pipes.x < -250){
 				pipes.x = 210;
 				pipes.y = Math.round(Math.floor(Math.random() * 251) - 400);
+				var temp = 0;
+				temp = (-300)-(-400);
+				console.log(temp);
 				//To generate a random integer from m to n, here is the code: 
 				//Math.random() * (n-m+1)) + m
 				console.log(pipes.y);
+				if (pipes.y > -280){
+					console.log("move up");
+				}
 			}
 		}
+
+		function adjustPipesUp(){
+			
+		}
+
 
 		function moveBird(){
 			if(bird.y < 460){
@@ -147,6 +158,15 @@
 			if (bird.y == 460){
 				displayGOver();
 				bird.y = 461;
+			}
+		}
+
+		function detectCollision(){
+			console.log("pipes"+pipes.x);
+			console.log("bird"+bird.x);
+			if (Math.abs(pipes.x - bird.x) < 10 && Math.abs(pipes.y - bird.x) < 10){
+				console.log("collision");
+				//displayScore();	
 			}
 		}
 
@@ -162,6 +182,7 @@
 			moveBird();
 			displayPipes();
 			movePipes();
+			detectCollision();
 		}
 
 		setInterval(gameloop, 80);
