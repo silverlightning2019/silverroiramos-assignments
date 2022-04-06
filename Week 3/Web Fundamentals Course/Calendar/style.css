@@ -1,0 +1,77 @@
+/*CSS reset settings here*/
+*{
+    margin: 10  px;
+    padding: 0px;
+}
+img{
+    width: 200px;
+    display: inline;
+}
+.june{
+    position: absolute;
+    left: 200px; 
+}
+.aug{
+    position: absolute;
+    right: 200px; 
+}
+h1{
+    font-family: Calibri;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    right: 200px; 
+    display: inline;
+    text-align:  center;
+}
+.table{
+    position: absolute;
+    top: 140px;
+    left: 280px;
+    right: 250px;
+}
+.row{
+    display: block;
+    margin-top: 10px; 
+}
+.head{
+    font-weight: bold;
+}
+.blue{
+    background-color: #ADD8E6;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 1px;
+}
+.gray{
+    background-color: #D3D3D3;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+.white{
+    background-color: none;
+    border-style: solid;
+    border-width: 1px;
+}
+.green{
+    background-color: #90EE90;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 1px;
+}
+.box{
+    min-height: 65px;
+    width: 100px;
+    top: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 1px;
+    display: inline-block;
+    text-align: center;
+}
+p{
+    font-family: Calibri;
+    display: inline-block;
+}
