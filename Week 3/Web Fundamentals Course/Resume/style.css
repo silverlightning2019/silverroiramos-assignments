@@ -1,0 +1,98 @@
+*{
+	font-family: Arial;
+
+}
+body{
+	background-image: url("img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 1500px 1500px;
+}
+.container{
+	padding: 10px;
+	
+}
+.header{
+	min-height: 300px;
+	padding-top:  10px;
+}
+	.header img{
+		width: 320px;
+		height: 250px;
+		object-fit: cover;
+		object-position: 100% 0;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.header .about{
+		display: inline-block;
+		padding-left: 50px;
+	}
+		.header .about h1{
+			font-size: 60px;
+		}
+		.header .about h2{
+			padding-bottom: 20px;
+		}
+		.header .about .line{
+			border-top: 3px solid black;
+  			width: 900px;
+  			padding-bottom: 20px;
+		}
+		.header .about p{
+			text-align: center;
+			word-spacing: 20px;
+		}
+.information{
+	min-height: 150px;
+	background-color: #D3D3D3;
+	padding: 10px 30px;
+	margin: 20px 0px;
+}
+	.information h2{
+		text-align: center;
+	}
+	.information p{
+		text-align: justify;
+	}
+.content{
+	min-height: 500px
+	padding: 20px;
+}
+	.content .favorite{
+		max-width: 610px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 10px;
+	}
+		.content .favorite h2{
+			text-align: center;
+		}
+		.content .favorite img{
+			height: 80px;
+			padding: 18px;
+		}
+	.content .project{
+		min-height: 550px;
+		max-width: 618px;
+		display: inline-block;
+		padding: 0px 30px;
+		background-color: #D3D3D3;
+	}
+		.content .project h2{
+			text-align: center;
+		}
+		.content .project ul{
+			padding-bottom: 50px;
+		}
+.footer{
+	min-height: 80px;
+	text-align:  center;
+	padding-top: 50px;
+}
+	.footer a{
+		color:  black;
+	}
+	.footer img{
+		height: 30px;
+		padding-left: 20px;
+	}
