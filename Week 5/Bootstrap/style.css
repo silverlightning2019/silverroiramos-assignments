@@ -1,0 +1,28 @@
+body{
+	background-image: url("ml.jpg");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+nav{
+	background-color: #0277BD;
+}
+h1{
+	padding: 10px;
+	text-align: center;
+}
+h2{
+	padding: 10px;
+	text-align: center;
+}
+form{
+	background-blend-mode: lighten;
+	background-color: #ADD8E699;
+	display: inline-block;
+	margin: 20px;
+	padding: 20px;
+	width: 50%;
+}
+.space{
+	margin-bottom: 10px;
+}
