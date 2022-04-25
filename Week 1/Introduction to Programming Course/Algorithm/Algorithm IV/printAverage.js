@@ -1,14 +1,17 @@
 function printAverage(x){
    sum = 0;
    avg = 0;
-   for(var i=0; i<x.length; i++) {
+
+   for(var i = 0; i < x.length; i++){
+      
       sum += x[i];
-    }
-   avg=sum/x.length;
+   }
+   
+   avg = sum / x.length;
    return avg;
 
-   
 }
+
 y = printAverage([1,2,3]);
 console.log(y); // should log 2
   
