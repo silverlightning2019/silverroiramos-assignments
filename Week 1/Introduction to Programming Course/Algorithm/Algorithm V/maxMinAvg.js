@@ -36,6 +36,7 @@ function maxMinAvg(arr){
   
   avg = sum / arr.length;
   arrnew.push(avg);
+  
   return arrnew;
   
 }
