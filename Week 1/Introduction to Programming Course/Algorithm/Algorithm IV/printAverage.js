@@ -8,6 +8,7 @@ function printAverage(x){
    }
    
    avg = sum / x.length;
+   
    return avg;
 
 }
