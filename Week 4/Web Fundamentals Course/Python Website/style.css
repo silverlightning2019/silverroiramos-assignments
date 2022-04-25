@@ -8,254 +8,239 @@ body{
 	width:  970px;
 }
 
-	body .container .header{
-		display: inline-block;
-		margin:  20px;
-		margin-bottom: 0px;
-	}
+.header{
+	display: inline-block;
+	margin:  20px;
+	margin-bottom: 0px;
+}
 
-		body .container .header img{
-			display: inline;
-			padding-right:  254px;
-			vertical-align: top;
-		}
+.header img{
+	display: inline;
+	padding-right:  254px;
+	vertical-align: top;
+}
 
-		body .container .header input, div, p{
-			display: inline;
-			margin-top: 30px;
-		}
+.header input, div, p{
+	display: inline;
+	margin-top: 30px;
+}
 
-		body .container .header .donate{
-			background-color: #FFD700;
-			border-radius: 5px;
-			border-style: none;
-			font-size:  12px;
-			margin-right: 5px;
-			padding: 5px 8px;
-		}
+.donate{
+	background-color: #FFD700;
+	border-radius: 5px;
+	border-style: none;
+	font-size:  12px;
+	margin-right: 5px;
+	padding: 5px 8px;
+}
 
-		body .container .header .search{
-			background-color: #202A44;
-			border-radius: 5px;
-			color: #7393B3;
-			font-size:  12px;
-			height:  100px;
-			padding: 20px 10px;
-			width: 100px;
-		}
+.search{
+	background-color: #202A44;
+	border-radius: 5px;
+	color: #7393B3;
+	font-size:  12px;
+	height:  100px;
+	padding: 20px 10px;
+	width: 100px;
+}
 
-			body .container .header .search input{
-				height: 30px;
-				margin: 5px;
-			}
+.search input{
+	height: 30px;
+	margin: 5px;
+}
 
-			body .container .header .search .go{
-				background-color: #6F8FAF;
-				border-radius: 3px;
-				color: white;
-			}
-			body .container .header .search p{
-				border-left: 1px solid black;
-				padding-left: 10px;
-			}
+.go{
+	background-color: #6F8FAF;
+	border-radius: 3px;
+	color: white;
+}
 
-	body .container .nav-bar{
-		background-color: #6F8FAF;
-		border-radius: 5px;
-		color: white;
-		display: inline-block;
-		margin: 2px 20px;
-		min-width: 910px;
-		padding: 10px;
-	}
+.search p{
+	border-left: 1px solid black;
+	padding-left: 10px;
+}
 
-		body .container .nav-bar ul li{
-			display: inline;
-			padding: 0px 20px;
-		}
+.nav-bar{
+	background-color: #6F8FAF;
+	border-radius: 5px;
+	color: white;
+	display: inline-block;
+	margin: 2px 20px;
+	min-width: 910px;
+	padding: 10px;
+}
 
-	body .container .content{
-		margin: 0px 20px;
-		padding-left: 50px;
+.nav-bar ul li{
+	display: inline;
+	padding: 0px 20px;
+}
 
-	}
+.content{
+	margin: 0px 20px;
+	padding-left: 50px;
+}
 
-		body .container .content .caption{
-			display: inline-block;
-			max-width: 600px;
-			vertical-align: top;
-		}
-			body .container .content .caption .main-caption{
-				margin: 0px 3px 0px 0px;
-			}
+.caption{
+	display: inline-block;
+	max-width: 600px;
+	vertical-align: top;
+}
 
-			body .container .content .caption .main-caption h2{
-				color: #FFC000;
-				display: block;
-				margin:  5px;
-			}
+.main-caption{
+	margin: 0px 3px 0px 0px;
+}
 
-			body .container .content .caption .sub-caption{
+.main-caption h2{
+	color: #FFC000;
+	display: block;
+	margin:  5px;
+}
+				
+.sub-caption p{
+	color: white;
+	display: block;
+	font-size: 12px;
+	margin:  8px 0px;
+}
 
-			}
+.content img{
+	display: inline-block;
+	margin-left: 35px;
+	margin-bottom:  0px;
+	height: 300px;
+}
 
-				body .container .content .caption .sub-caption p{
-					color: white;
-					display: block;
-					font-size: 12px;
-					margin:  8px 0px;
-				}
+.sub-content{
+	background-color: white;
+	display: inline-block;
+	margin: 0px;
+	min-height: 250px;
+	min-width: 970px;
+}
 
-		body .container .content img{
-			display: inline-block;
-			margin-left: 35px;
-			margin-bottom:  0px;
-			height: 300px;
-		}
+.news{
+	display: inline-block;
+	margin: 20px 10px 10px 20px;
+	vertical-align: top;
+}
 
-	body .container .sub-content{
-		background-color: white;
-		display: inline-block;
-		margin: 0px;
-		min-height: 250px;
-		min-width: 970px;
-	}
+.title{
+	border-top: 3px solid #6F8FAF;
+	padding-top: 10px;
+}
 
-		body .container .sub-content .news{
-			display: inline-block;
-			margin: 20px 10px 10px 20px;
-			vertical-align: top;
-		}
+.title h3{
+	color: gray;
+	display: inline;
+	font-weight: normal;
+	margin-right: 290px;
+}
 
-			body .container .sub-content .news .title{
-				border-top: 3px solid #6F8FAF;
-				padding-top: 10px;
-			}
+.title h6{
+	color: gray;
+	display: inline;
+	font-weight: normal;
+}
 
-			body .container .sub-content .news .title h3{
-				color: gray;
-				display: inline;
-				font-weight: normal;
-				margin-right: 290px;
+.news ul{
+	border-top: 1px solid black;
+	color: gray;
+	display:  block;
+	font-size: 12px;
+	list-style: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left:  0px;
+	padding-top:  10px;
+}
 
-			}
+.news ul li{
+	display:  inline;
+	padding-right: 20px;
+}
 
-			body .container .sub-content .news .title h6{
-				color: gray;
-				display: inline;
-				font-weight: normal;
-			}
+.news ul li a{
+	text-decoration: none;
+}
 
-			body .container .sub-content .news ul{
-				border-top: 1px solid black;
-				color: gray;
-				display:  block;
-				font-size: 12px;
-				list-style: none;
-				margin-top: 10px;
-				margin-bottom: 10px;
-				padding-left:  0px;
-				padding-top:  10px;
-			}
+.use{
+	display: inline-block;
+	margin: 20px 10px 20px 10px;
+}
 
-				body .container .sub-content .news ul li{
-					display:  inline;
-					padding-right: 20px;
-				}
+.title{
+	border-top: 3px solid #6F8FAF;
+	padding-top: 10px;
+}
 
-				body .container .sub-content .news ul li a{
-					text-decoration: none;
-				}
+.title h3{
+	color: gray;
+	display: inline;
+	font-weight: normal;
+	margin-right: 250px;
+}
 
+.title h6{
+	color: gray;
+	display: inline;
+	font-weight: normal;
+}
 
+.use ul{
+	border-top: 1px solid black;
+	display:  block;
+	font-size: 12px;
+	list-style: none;
+	margin-top: 10px;
+	padding-left:  0px;
+}
 
-		body .container .sub-content .use{
-			display: inline-block;
-			margin: 20px 10px 20px 10px;
-		}
+.use ul li{
+	display:  inline-block;
+	font-weight: bold;
+	padding-right: 5px;
+}
 
-			body .container .sub-content .use .title{
-				border-top: 3px solid #6F8FAF;
-				padding-top: 10px;
-			}
+.type{
+	display:  inline;
+}
 
-			body .container .sub-content .use .title h3{
-				color: gray;
-				display: inline;
-				font-weight: normal;
-				margin-right: 250px;
+.type ul{
+	border-top: 0px solid black;
+}
 
-			}
+.type ul li{
+	background-color: #D3D3D3;
+	color: gray;
+	font-weight: normal;
+	padding-right: 5px;
+}
 
-			body .container .sub-content .use .title h6{
-				color: gray;
-				display: inline;
-				font-weight: normal;
-			}
+.footer{
+	color:  #ADD8E6;
+	max-height: 250px;
+	max-width: 970px;
+}
 
-			body .container .sub-content .use ul{
-				border-top: 1px solid black;
-				display:  block;
-				font-size: 12px;
-				list-style: none;
-				margin-top: 10px;
-				padding-left:  0px;
-			}
+.links ul{
+	margin: 30px 0px 20px 0px;
+	text-align: center;
+}
 
-				body .container .sub-content .use ul li{
-					display:  inline-block;
-					font-weight: bold;
-					padding-right: 5px;
-				}
+.links ul li{
+	display:  inline;
+	margin: 10px;
+}
 
-				body .container .sub-content .use ul li .type{
-					display:  inline;
-				}
+.sub-links ul{
+	font-size: 10px;
+	margin: 10px 0px 30px 0px;
+	text-align: center;
+}
 
-					body .container .sub-content .use ul li .type ul{
-						border-top: 0px solid black;
-					}
-
-						body .container .sub-content .use ul li .type ul li{
-							background-color: #D3D3D3;
-							color: gray;
-							font-weight: normal;
-							padding-right: 5px;
-						}
-
-	body .container .footer{
-		color:  #ADD8E6;
-		max-height: 250px;
-		max-width: 970px;
-	}
-
-		body .container .footer .links{
-			
-		}
-
-			body .container .footer .links ul{
-				margin: 30px 0px 20px 0px;
-				text-align: center;
-			}
-
-				body .container .footer .links ul li{
-					display:  inline;
-					margin: 10px;
-				}
-
-		body .container .footer .sub-links{
-		
-		}
-
-			body .container .footer .sub-links ul{
-				font-size: 10px;
-				margin: 10px 0px 30px 0px;
-				text-align: center;
-			}
-
-				body .container .footer .sub-links ul li{
-					display:  inline;
-					margin: 10px 2px;
-				}
+.sub-links ul li{
+	display:  inline;
+	margin: 10px 2px;
+}
 
 
