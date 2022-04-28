@@ -1,0 +1,89 @@
+body{
+	background-color:  #1f5768;
+	padding: 20px;
+}
+
+h1{
+	color: #d9ecda;
+}
+
+p{
+	background-color: #c6cac5;
+	display: inline-flex;
+	padding: 10px;
+}
+
+span{
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+#frog{
+	display: inline;
+	margin-top: 20px;
+	margin-right: -5px;
+	vertical-align: middle;
+	width: 300px;
+}
+
+hr{	
+	background-color: red;
+	border: none;
+	border-radius: 10px;
+	display: inline;
+	margin-left: 0px;
+	vertical-align: -70%;
+}
+
+#mosquito{
+	display: inline;
+	vertical-align: middle;
+	width: 100px;
+}
+
+@media (min-width: 0px) and (max-width: 480px){
+	#frog{
+		width: 100px;
+	}
+
+	hr{
+		padding: 0px 50px;		
+	}
+
+	#mosquito{
+		width: 50px;
+	}
+
+	span:after{
+		content: 'less than or equal to 480px.';
+	}
+}
+
+@media (min-width: 481px) and (max-width: 1023px){
+	#frog{
+		width: 200px;
+	}
+
+	hr{
+		padding: 0px 70px;		
+	}
+
+	#mosquito{
+		width: 80px;
+	}
+	
+	span:after{
+		content: 'between 481px and 1023px.';
+	}
+}
+
+@media (min-width: 1024px){
+	hr{
+		padding: 0px 280px;	
+	}
+
+	span:after{
+		content: 'greater than or equal to 1024px.';
+	}
+}
+
