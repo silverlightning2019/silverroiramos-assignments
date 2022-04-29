@@ -1,0 +1,156 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    /*outline: 1px solid black;*/
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper{
+    background-color: #FFD9B7;
+    height: auto;
+    padding: 30px;
+    width: auto;
+}
+
+#logo{
+    min-height: 130px;
+    width: 25%;
+    background-color: #B97A57;
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+#navigation{
+    min-height: 130px;
+    width: 72%;
+    background-color: #FF7F27;
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+}
+
+#main_content{
+    height: auto;
+    width: auto;
+    background-color: #880015;
+    padding: 40px;
+}
+
+#about{
+    min-height: 250px;
+    width: 80%;
+    background-color: #FFAEC9;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#advertisement{
+    min-height: 200px;
+    width: 17%;
+    background-color: #C8BFE7;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+#footer{
+    height: auto;
+    margin-top: 30px;
+}
+
+.sponsors{
+    height: 80px;
+    margin: 0px 30px;
+    width: 28%;
+    background-color: #FFFF88;
+    display: inline-block;
+}
+
+@media (min-width: 0px) and (max-width: 480px){
+    #wrapper{
+        padding: 0px;
+    }
+
+    #logo{
+        margin-bottom:  0px;
+        width: 100%;
+    }
+
+    #navigation{
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    #main_content{
+        height: auto;
+        padding: 30px;
+    }
+
+    #about{
+        width: 100%;
+    }
+
+    #advertisement{
+        display: none;
+    }
+
+    #footer{
+        height: auto;
+        margin: 5px 0px;
+    }
+
+    .sponsors{
+        margin: 5px 0px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1023px){
+    #wrapper{
+        padding: 0px;
+    }
+
+    #logo{
+        width: 25.6%;
+    }
+
+    #navigation{
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    #main_content{
+        height: auto;
+        padding: 30px;
+    }
+
+    #about{
+        width: 100%;
+    }
+
+    #advertisement{
+        display: none;
+    }
+
+    #footer{
+        height: auto;
+        margin: 0px 0px;
+    }
+
+    .sponsors{
+        margin: 20px;
+        margin-right: 10px;
+        width: 46%;
+    }
+}
+
+@media (min-width: 1024px){
+    
+}
