@@ -1,0 +1,175 @@
+*{
+	font-family: Arial;
+	padding: 5px;
+
+}
+body{
+	background-image: url("img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container{
+	padding: 10px;
+	
+}
+.header{
+	min-height: 300px;
+	padding-top:  10px;
+}
+	.header img{
+		width: 320px;
+		height: 250px;
+		object-fit: cover;
+		object-position: 100% 0;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.header .about{
+		display: inline-block;
+		padding-left: 50px;
+	}
+		.header .about h1{
+			font-size: 60px;
+		}
+		.header .about h2{
+			padding-bottom: 20px;
+		}
+		.header .about .line{
+			border-top: 3px solid black;
+  			width: auto;
+  			padding-bottom: 20px;
+		}
+		.header .about ul{
+			text-align: center;
+			word-spacing: 20px;
+		}
+
+		.header .about ul li{
+			display: inline;
+		}
+
+.information{
+	min-height: 150px;
+	background-color: #D3D3D3;
+	padding: 10px 30px;
+	margin: 20px 0px;
+}
+	.information h2{
+		text-align: center;
+	}
+	.information p{
+		text-align: justify;
+	}
+.content{
+	min-height: 500px
+	padding: 20px;
+}
+	.content .favorite{
+		max-width: 600px;
+		display: inline-block;
+		vertical-align: top;
+	}
+		.content .favorite h2{
+			text-align: center;
+		}
+		.content .favorite img{
+			height: 80px;
+			padding: 18px;
+		}
+	.content .project{
+		min-height: 540px;
+		max-width: 595px;
+		display: inline-block;
+		margin-left: 13px;		
+		padding: 0px 30px;
+		background-color: #D3D3D3;
+	}
+		.content .project h2{
+			text-align: center;
+		}
+		.content .project ul{
+			padding-bottom: 50px;
+		}
+.footer{
+	min-height: 80px;
+	text-align:  center;
+	padding-top: 50px;
+}
+	.footer .link {
+		display: inline;
+	}
+
+	.footer a{
+		color:  black;
+	}
+	.footer img{
+		height: 30px;
+		padding-left: 20px;
+	}
+
+@media (max-width: 1348px){
+
+	.content .favorite{
+		text-align: center;
+		margin: 0px;
+		min-width: 100%;
+		height: auto;
+	}
+
+	.content .project{
+		text-align: center;
+		margin: 0px;
+		min-width: 100%;
+		height: auto;
+		padding: 0px;
+		min-height: auto;
+	}
+
+	.project ul{
+		font-weight: bold;
+		list-style: none;
+		padding-bottom: 0px;
+	}
+}
+
+@media (max-width: 1310px){
+
+	.header img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header{
+		padding: 0px;
+		text-align: center;
+	}
+
+	.header .about{
+		padding-left: 0px;
+	}
+
+
+}
+
+@media (max-width: 804px){
+
+	.header .about ul li{
+		display: block;
+		padding: 10px 0px;
+	}
+}
+
+@media (max-width: 680px){
+
+	.footer{
+		padding-top: 0px;
+	}
+
+	.footer .link{
+		display: block;
+		margin: 0px;
+	}
+
+}
