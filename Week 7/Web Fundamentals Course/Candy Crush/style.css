@@ -1,0 +1,42 @@
+*{
+	
+}
+
+body{
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	height: 700px;
+}
+
+table{
+	background-color: #264667;
+	border-radius: 30px;
+	margin-left: 500px;
+	margin-top: 150px;
+	min-height: 500px;
+	min-width: 500px;
+}
+
+tr td{
+	min-height: 50px;
+	min-width: 50px;
+}
+
+tr td img{
+    height: 80px;
+    margin: 20px;
+    padding: 10px;
+}
+
+p{
+	background-color: rgba(183,1,255,255);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+	color:  white;
+	font-size: 20px;
+	font-style: italic;
+	margin-left: 650px;
+	margin-top: 100px;
+	padding: 5px;
+	text-align: center;
+	width: 200px;
+}
