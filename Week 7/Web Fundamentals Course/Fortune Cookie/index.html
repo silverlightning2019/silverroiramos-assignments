@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fortune Cookie</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+      $(document).ready(function(){
+        
+        $("img").hover(function(){
+
+          var hoveredClassName = $(this).attr("class");
+
+          $(this).attr("src", "advice"+hoveredClassName+".PNG");
+          
+        }, function(){
+
+          $(this).attr("src", "cookie.jpg");
+
+        });
+      });
+      
+    </script>
+  </head>
+  <body>
+    <h1>Fortune Cookie</h1>
+    <p><span>Directions:</span> Close your eyes then point at this page. Open your eyes and follow the advice your mouse pointer lands on.</p>
+    <div class="center">
+      <div>
+        <img class="1" src="cookie.jpg">
+        <img class="2" src="cookie.jpg">
+        <img class="3" src="cookie.jpg">
+        <img class="4" src="cookie.jpg">
+        <img class="5" src="cookie.jpg">
+        <img class="6" src="cookie.jpg">
+      </div>
+      <div>
+        <img class="7" src="cookie.jpg">
+        <img class="8" src="cookie.jpg">
+        <img class="9" src="cookie.jpg">
+        <img class="10" src="cookie.jpg">
+        <img class="11" src="cookie.jpg">
+        <img class="12" src="cookie.jpg">
+      </div>
+      <div>
+        <img class="13" src="cookie.jpg">
+        <img class="14" src="cookie.jpg">
+        <img class="15" src="cookie.jpg">
+        <img class="16" src="cookie.jpg">
+        <img class="17" src="cookie.jpg">
+        <img class="18" src="cookie.jpg">
+      </div>
+      <div>
+        <img class="19" src="cookie.jpg">
+        <img class="20" src="cookie.jpg">
+        <img class="21" src="cookie.jpg">
+        <img class="22" src="cookie.jpg">
+        <img class="23" src="cookie.jpg">
+        <img class="24" src="cookie.jpg">
+      </div>
+      <div>
+        <img class="25" src="cookie.jpg">
+        <img class="26" src="cookie.jpg">
+        <img class="27" src="cookie.jpg">
+        <img class="28" src="cookie.jpg">
+        <img class="29" src="cookie.jpg">
+        <img class="30" src="cookie.jpg">
+      </div>
+      
+    </div>
+  </body>
+</html>
